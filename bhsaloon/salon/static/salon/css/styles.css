@@ -1,0 +1,378 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+  padding: 10px;
+}
+
+/* Стили для логотипа */
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.logo p {
+  font-size: 18px;
+  margin: 0;
+}
+
+/* Стили для навигационных ссылок */
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0 10px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Стили для иконок */
+.icons {
+  display: flex;
+}
+
+.icons i {
+  margin: 0 10px;
+  font-size: 24px;
+}
+
+.footer-top {
+  background-color: black; /* Изменил цвет фона на черный */
+  color: white;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+/* Стили для заголовка и подзаголовка в футере */
+.footer-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.footer-subtitle {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+/* Стили для полей ввода и кнопки в футере */
+.footer-inputs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+.footer-inputs input {
+  margin: 10px 10px; /* Добавил отступы по бокам */
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  height: 40px; /* Добавил высоту для полей ввода */
+}
+
+.footer-inputs button {
+  margin: 10px 10px; /* Добавил отступы по бокам */
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  height: 40px; /* Добавил высоту для кнопки */
+}
+
+/* Стили для мелкого текста в футере */
+.footer-small {
+  font-size: 14px;
+  color: gray;
+  text-align: center;
+}
+
+.footer-low {
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+  padding: 10px;
+}
+
+/* Стили для трех текстовых элементов в футере */
+.footer-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row; /* Изменил направление на горизонтальное */
+}
+
+/* Стили для копирайта в футере */
+.footer-copy {
+  font-size: 14px;
+}
+
+/* Стили для публичной оферты в футере */
+.footer-offer {
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+/* Стили для времени работы в футере */
+.footer-time {
+  font-size: 14px;
+}
+
+.container-record {
+    position: relative;
+}
+
+.main-image {
+    width: 100%;
+}
+
+.content-record {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.container-record button {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.course-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.course-card {
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 0;
+}
+
+.course-image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.course-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.course-info-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.course-info-overlay h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.course-info-overlay p {
+    font-size: 14px;
+}
+
+.course-body {
+    padding: 20px;
+    text-align: left;
+    flex-grow: 1;
+}
+
+.course-body h3 {
+    margin-bottom: 15px;
+    font-size: 22px;
+    color: #333;
+}
+
+.course-body p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.course-body strong {
+    font-weight: bold;
+    color: #000;
+}
+
+.course-price {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 15px 0;
+    color: #000;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.btn {
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid #000;
+    color: #000;
+}
+
+.btn:hover {
+    background: #333;
+}
+
+.btn-outline:hover {
+    background: #000;
+    color: #fff;
+}
+
+.all-courses h2 {
+    font-size: 32px;
+    margin-top: 60px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #333;
+}
+
+.btn-all-courses {
+    display: flex;
+    justify-content: center; /* Центрируем кнопку горизонтально */
+    margin-top: 30px;        /* Отступ сверху */
+    margin-bottom: 100px;     /* Отступ снизу */
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.map-box {
+    position: absolute;
+    z-index: 10;
+    background: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.map-box h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.map-box p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.map-box a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 14px;
+    display: block;
+    margin-top: 10px;
+}
+
+iframe {
+    width: 100%;
+    max-width: 1400px;
+    height: 500px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.reviews-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+a.logo-link {
+    color: inherit;
+    text-decoration: none;
+
+a.logo-link:visited {
+    color: inherit;
+    text-decoration: none;
+}

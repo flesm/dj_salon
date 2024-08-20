@@ -1,0 +1,24 @@
+{% load static %}
+
+<link type="text/css" href="{% static 'salon/css/styles.css' %}" rel="stylesheet"/>
+<div class="header">
+    <a href="{% url 'home' %}" class="logo-link">
+      <div class="logo">
+        <h1>BH</h1>
+        <p>BEAUTY HOUSE</p>
+        <p>STUDIO</p>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#contact">связь</a></li>
+      <li><a href="{% url 'courses' %}">обучение</a></li>
+      <li><a href="#reviews">отзывы</a></li>
+      <li><a href="#location">локация</a></li>
+      <li><a href="#">запись</a></li>
+    </ul>
+    <div class="icons">
+        <a href="#"><img src="{% static 'salon/images/tiktok.png' %}" alt="tiktok"></a>
+        <a href="#"><img src="{% static 'salon/images/telegram.png' %}" alt="tg"></a>
+        <a href="#"><img src="{% static 'salon/images/instagram.png' %}" alt="insta"></a>
+    </div>
+</div>

@@ -1,0 +1,17 @@
+{% extends 'salon/base.html' %}
+{% load static %}
+
+{% block title %}
+Страница программ обучения
+{% endblock %}
+
+{% block content %}
+    <div class="all-courses">
+        <h2>все программы обучения</h2>
+    </div>
+
+    {% include 'salon/includes/mini_course.html' %}
+
+{% endblock %}
+
+

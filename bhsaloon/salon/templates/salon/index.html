@@ -1,0 +1,47 @@
+{% extends 'salon/base.html' %}
+{% load static %}
+
+{% block title %}
+Главная страница
+{% endblock %}
+
+{% block content %}
+    <div class="container-record">
+        <img class="main-image" src="{% static 'salon/images/main_photo.jpeg' %}" alt="salon">
+        <div class="content-record">
+            <h1>BEAUTY HOUSE</h1>
+            <p>STUDIO</p>
+            <p>Предоставляем комплекс услуг по обучению и уходу за собой</p>
+            <button class="btn-record">запись</button>
+        </div>
+    </div>
+
+    <div class="all-courses">
+        <h2>программы обучения</h2>
+    </div>
+
+    {% include 'salon/includes/mini_course.html' %}
+
+    <div class="btn-all-courses">
+        <a href="{% url 'courses' %}"><button class="btn" >все курсы</button></a>
+    </div>
+
+    <div class="all-courses">
+        <h2>Отзывы</h2>
+    </div>
+
+    <div id="reviews">
+        {% include 'salon/includes/reviews.html' %}
+    </div>
+
+    <div class="all-courses">
+        <h2>Локация</h2>
+    </div>
+
+    <div id="location">
+        {% include 'salon/includes/map.html' %}
+    </div>
+
+{% endblock %}
+
+

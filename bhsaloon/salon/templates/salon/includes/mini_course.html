@@ -1,0 +1,28 @@
+{% load static %}
+
+<link type="text/css" href="{% static 'salon/css/styles.css' %}" rel="stylesheet"/>
+
+<div class="course-list">
+    {% for course in courses %}
+    <div class="course-card">
+        <div class="course-image">
+            <img src="{{ course.small_img.url }}" alt="{{ course.main_name }}">
+            <div class="course-info-overlay">
+                <h3>{{ course.extra_name }}</h3>
+                <p>Длительность {{ course.duration }} часа.</p>
+                <p>{{ course.get_event_type_display }} обучение.</p>
+            </div>
+        </div>
+        <div class="course-body">
+            <h3>{{ course.main_name }}</h3>
+            <p>{{ course.course_includes }}</p>
+            <p class="course-price">от {{ course.cost }} BYN</p>
+            <div class="btn-group">
+                <button class="btn">Консультация</button>
+                <button class="btn btn-outline">Программа обучения</button>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+
+</div>
