@@ -5,14 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d0f0418b-aff5-4f30-8d40-779a90c7098e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/django_salon.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/django_salon.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bhsaloon/bhsaloon/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/bhsaloon/bhsaloon/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bhsaloon/bhsaloon/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/bhsaloon/bhsaloon/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bhsaloon/salon/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/bhsaloon/salon/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bhsaloon/salon/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/bhsaloon/salon/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bhsaloon/salon/static/salon/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/bhsaloon/salon/static/salon/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bhsaloon/salon/templates/salon/all_courses.html" beforeDir="false" afterPath="$PROJECT_DIR$/bhsaloon/salon/templates/salon/all_courses.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bhsaloon/salon/templates/salon/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/bhsaloon/salon/templates/salon/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bhsaloon/salon/templates/salon/includes/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/bhsaloon/salon/templates/salon/includes/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bhsaloon/salon/templates/salon/includes/mini_course.html" beforeDir="false" afterPath="$PROJECT_DIR$/bhsaloon/salon/templates/salon/includes/mini_course.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bhsaloon/salon/templates/salon/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/bhsaloon/salon/templates/salon/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bhsaloon/salon/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/bhsaloon/salon/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bhsaloon/salon/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/bhsaloon/salon/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dop/ылао.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

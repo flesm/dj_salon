@@ -1,0 +1,43 @@
+{% extends 'salon/base.html' %}
+{% load static %}
+
+
+{% block title %}
+Курс {{ course.main_name }}
+{% endblock %}
+
+{% block content %}
+    <div class="course-header">
+        <img src="{{ course.big_img.url }}" alt="Course Image" class="course-image2">
+        <div class="course-info2">
+            <h1>{{course.main_name}}</h1>
+            <p>от {{course.cost}} BYN | {{course.lessons_num}} занятий</p>
+            <div class="course-details">
+                <p><strong>Длительность:</strong> {{course.duration}} часов</p>
+                <p><strong>Форма проведения:</strong> {{course.event_form}}</p>
+                <p><strong>Выдается:</strong> {{course.issue}}</p>
+            </div>
+            <div class="course-buttons">
+                <button class="btn btn-primary">Запись</button>
+                <a href="#contact">
+                    <button class="btn btn-secondary">Консультация</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Course Description -->
+    <div class="course-description">
+        <div class="description-text">
+            <h2>Описание курса</h2>
+            <p>{{course.description}}</p>
+            <a href="#contact">
+                <button class="btn btn-secondary">Консультация</button>
+            </a>
+        </div>
+        <div class="description-image">
+            <img src="{{ course.mid_img.url }}" alt="Description Image">
+        </div>
+    </div>
+{% endblock %}
+

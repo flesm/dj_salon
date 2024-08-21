@@ -17,7 +17,7 @@
     </div>
 
     <div class="all-courses">
-        <h2>программы обучения</h2>
+        <h2>Программы обучения</h2>
     </div>
 
     {% include 'salon/includes/mini_course.html' %}
@@ -26,21 +26,18 @@
         <a href="{% url 'courses' %}"><button class="btn" >все курсы</button></a>
     </div>
 
-    <div class="all-courses">
+    <div id="reviews" class="all-courses">
         <h2>Отзывы</h2>
     </div>
 
-    <div id="reviews">
-        {% include 'salon/includes/reviews.html' %}
-    </div>
+    {% include 'salon/includes/reviews.html' %}
 
-    <div class="all-courses">
+    <div id="location" class="all-courses">
         <h2>Локация</h2>
     </div>
 
-    <div id="location">
-        {% include 'salon/includes/map.html' %}
-    </div>
+    {% include 'salon/includes/map.html' %}
+
 
 {% endblock %}
 

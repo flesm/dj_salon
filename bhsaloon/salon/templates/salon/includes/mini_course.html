@@ -18,8 +18,10 @@
             <p>{{ course.course_includes }}</p>
             <p class="course-price">от {{ course.cost }} BYN</p>
             <div class="btn-group">
-                <button class="btn">Консультация</button>
-                <button class="btn btn-outline">Программа обучения</button>
+                <a href="#contact"><button class="btn">Консультация</button></a>
+                <a href="{% url 'course_detail' course.id %}">
+                    <button class="btn btn-outline">Программа обучения</button>
+                </a>
             </div>
         </div>
     </div>

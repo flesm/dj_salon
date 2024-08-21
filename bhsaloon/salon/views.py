@@ -1,5 +1,5 @@
 from django.http import HttpResponse, HttpResponseNotFound
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 
 from salon.models import CourseModel
 
@@ -20,3 +20,8 @@ def mini_courses(request):
 def all_courses(request):
     courses = CourseModel.objects.all()
     return render(request, 'salon/all_courses.html', {'courses': courses})
+
+
+def course_detail(request, course_id):
+    course = get_object_or_404(CourseModel, id=course_id)
+    return render(request, 'salon/course_detail.html', {'course': course})
